@@ -58,17 +58,17 @@ hr {
     margin-bottom: 60px;
 }
 
-h1, h2 {
-    font-family: 'Proxima Nova', 'Helvetica Neue', 'Helvetica', Arial, serif;
-    font-weight: 300;
-}
-
 h1 {
     font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 4rem;
 }
 
 h2 {
     font-size: 28px;
+    letter-spacing: 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
 }
 
 p {
@@ -76,7 +76,7 @@ p {
 }
 
 .container {
-    width: 600px;
+    width: 500px;
 }
 
 #site-wrapper {
