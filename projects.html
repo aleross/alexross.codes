@@ -8,7 +8,7 @@
     <body>
         <div id="site-wrapper" class="container">
             <header>
-                <a id="site-brand" href="/">
+                <a id="site-brand" class="no-effect" href="/">
                     <img src="https://avatars1.githubusercontent.com/u/1857007?v=3&s=460">
                 </a>
                 <nav id="site-nav">
@@ -23,13 +23,30 @@
             </section>
             <hr>
             <footer>
-                <p>Designed by Alex Ross. Licensed under MIT.</p>
+                <p>Designed by Alex Ross. Licensed under <a href="https://github.com/aleross/alexross.codes">MIT</a>.</p>
                 <p>
-                    <a class="ion-social-github"></a>
-                    <a class="ion-social-linkedin"></a>
-                    <a class="ion-social-twitter"></a>
+                    <a href="https://github.com/aleross" class="ion-social-github no-effect"></a>
+                    <a href="https://linkedin.com/alexross8" class="ion-social-linkedin no-effect"></a>
+                    <a href="https://twitter.com/areteross" class="ion-social-twitter no-effect"></a>
                 </p>
             </footer>
         </div>
+        <script>
+        (function()
+        {
+            var path = window.location.pathname,
+                links = document.getElementById('site-nav').children;
+            // Mark active link
+            for (var i = 0; i < links.length; i++)
+            {
+                var link = links[i],
+                    href = link.getAttribute('href');
+                if (href === path)
+                {
+                    link.className += (link.className ? ' ' : '') + 'active';
+                }
+            }
+        })();
+        </script>
     </body>
 </html>
