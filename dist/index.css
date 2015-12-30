@@ -646,16 +646,31 @@ form {
 body {
   padding: 70px 40px;
   background: #fff;
-  font-size: 20px;
+  font-size: 18px;
   color: #333;
   font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif; }
 
 a {
+  position: relative;
   color: #4078C0;
   text-decoration: none; }
   a:hover {
-    color: #4078C0;
-    text-decoration: underline; }
+    color: #4078C0; }
+    a:hover:after {
+      left: 0;
+      visibility: visible;
+      width: 100%; }
+  a:after {
+    background-color: #4078C0;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    left: 45%;
+    position: absolute;
+    transition-duration: .15s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: hidden;
+    width: 0; }
 
 hr {
   width: 120px;
@@ -664,11 +679,20 @@ hr {
   margin-bottom: 60px; }
 
 h1, h2 {
-  font-family: 'Proxima Nova';
+  font-family: 'Proxima Nova', 'Helvetica Neue', 'Helvetica', Arial, serif;
   font-weight: 300; }
 
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 28px; }
+
+p {
+  margin-bottom: 10px; }
+
 .container {
-  width: 800px; }
+  width: 600px; }
 
 #site-wrapper > header {
   display: flex;
@@ -743,22 +767,6 @@ h1, h2 {
     #site-nav a:last-child {
       margin-right: 0; }
     #site-nav a:hover {
-      text-decoration: none;
       color: #222; }
-      #site-nav a:hover:after {
-        left: 0;
-        visibility: visible;
-        width: 100%; }
-    #site-nav a:after {
-      background-color: #4078C0;
-      bottom: 0;
-      content: '';
-      height: 1px;
-      left: 45%;
-      position: absolute;
-      transition-duration: .15s;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      visibility: hidden;
-      width: 0; }
 
 /*# sourceMappingURL=index.css.map */

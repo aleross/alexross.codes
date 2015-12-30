@@ -3,7 +3,8 @@ module.exports = {
         livereload: false
     },
     html: {
-        files: ['*.html'],
+        files: ['src/html/**/*.html'],
+        tasks: ['generate'],
         options: { livereload: true }
     },
     sass: {
