@@ -14,14 +14,14 @@ body {
     background: #fff;
     font-size: 18px;
     color: #333;
-    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
 }
 
 a {
     position: relative;
     color: $primary;
     text-decoration: none;
-    transition: color 0.15s ease-out;
+    transition: color $transition-duration ease-out;
     &:hover, &.active {
         color: $primary;
     }
@@ -32,10 +32,10 @@ a {
             background-color: $primary;
             bottom: 0;
             content: '';
-            height: 1px;
+            height: 2px;
             left: 45%;
             position: absolute;
-            transition-duration: .15s;
+            transition-duration: $transition-duration;
             transition-timing-function: cubic-bezier(.4,0,.2,1);
             visibility: hidden;
             width: 0;

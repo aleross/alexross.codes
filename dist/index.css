@@ -644,10 +644,12 @@ form {
   src: url("https://cdn.enplug.net/fonts/proxima-nova/ProximaNova-LightWeb.woff") format("woff"), url("https://cdn.enplug.net/fonts/proxima-nova/ProximaNova-LightWeb.eot?") format("eot"), url("https://cdn.enplug.net/fonts/proxima-nova/ProximaNova-LightWeb.ttf") format("truetype"), url("https://cdn.enplug.net/fonts/proxima-nova/ProximaNova-LightWeb.svg#Proxima_Nova") format("svg"), url("https://cdn.enplug.net/fonts/proxima-nova/ProximaNova-LightWeb.woff2") format("woff2"); }
 
 #site-brand {
-  position: relative;
+  position: absolute;
+  left: -200px;
+  top: 0;
   display: inline-block;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   overflow: hidden; }
   #site-brand img {
@@ -660,7 +662,7 @@ form {
     z-index: 2;
     width: 100%;
     height: 100%;
-    line-height: 40px;
+    line-height: 50px;
     text-align: center;
     color: #fff;
     font-size: 20px;
@@ -679,22 +681,16 @@ form {
     left: 0;
     opacity: 0;
     transition: opacity 0.2s ease-in-out; }
-  #site-brand:hover:before {
-    opacity: 1;
-    transition-delay: 0.1s; }
-  #site-brand:hover:after {
-    opacity: 0.8; }
 
 #site-nav {
-  flex: 1;
-  text-align: right; }
+  flex: 1; }
   #site-nav a {
-    font-family: 'Proxima Nova', sans-serif;
     display: inline-block;
     position: relative;
-    color: #222;
-    font-size: 22px;
-    margin-right: 15px;
+    color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 30px;
     text-decoration: none;
     line-height: 1.4; }
     #site-nav a:last-child {
@@ -702,30 +698,30 @@ form {
     #site-nav a.active, #site-nav a.active:hover {
       color: #4078C0; }
     #site-nav a:hover {
-      color: #222; }
+      color: #333; }
 
 body {
   padding: 70px 40px;
   background: #fff;
   font-size: 18px;
   color: #333;
-  font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif; }
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif; }
 
 a {
   position: relative;
   color: #4078C0;
   text-decoration: none;
-  transition: color 0.15s ease-out; }
+  transition: color 0.2s ease-out; }
   a:hover, a.active {
     color: #4078C0; }
   a:not(.no-effect):after {
     background-color: #4078C0;
     bottom: 0;
     content: '';
-    height: 1px;
+    height: 2px;
     left: 45%;
     position: absolute;
-    transition-duration: .15s;
+    transition-duration: 0.2s;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     visibility: hidden;
     width: 0; }
