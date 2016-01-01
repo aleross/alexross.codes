@@ -628,21 +628,6 @@ ol,
 form {
   margin-bottom: 2.5rem; }
 
-/* ==========================================================================
-   Custom font loading
-   ========================================================================== */
-/* ==========================================================================
-   Mixin for generating variations on font-face
-   ========================================================================== */
-/* String replace
-========================================================================== */
-/* Font face
-========================================================================== */
-@font-face {
-  font-family: "Proxima Nova";
-  font-weight: 300;
-  src: url("https://cdn.enplug.net/fonts/proxima-nova/ProximaNova-LightWeb.woff") format("woff"), url("https://cdn.enplug.net/fonts/proxima-nova/ProximaNova-LightWeb.eot?") format("eot"), url("https://cdn.enplug.net/fonts/proxima-nova/ProximaNova-LightWeb.ttf") format("truetype"), url("https://cdn.enplug.net/fonts/proxima-nova/ProximaNova-LightWeb.svg#Proxima_Nova") format("svg"), url("https://cdn.enplug.net/fonts/proxima-nova/ProximaNova-LightWeb.woff2") format("woff2"); }
-
 #about #photos img {
   float: left;
   width: 32%;
