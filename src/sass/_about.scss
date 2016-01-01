@@ -1,0 +1,18 @@
+#about {
+    #photos {
+
+        // 3x3 grid of photos
+        img {
+            float: left;
+            width: 32%;
+            margin: 1%;
+            height: 200px;
+            &:first-child, &:nth-child(4) {
+                margin-left: 0;
+            }
+            &:last-child, &:nth-child(3) {
+                margin-right: 0;
+            }
+        }
+    }
+}

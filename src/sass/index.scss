@@ -1,6 +1,7 @@
 @import 'skeleton/skeleton';
 @import 'fonts';
 @import 'variables';
+@import 'about';
 
 @import 'header';
 
@@ -10,8 +11,8 @@
 // - clean up SASS
 
 body {
-    padding: 70px 40px;
-    background: #fff;
+ //   padding: 70px 40px;
+ //   background: #fff;
     font-size: 18px;
     color: #333;
     font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
@@ -22,6 +23,7 @@ a {
     color: $primary;
     text-decoration: none;
     transition: color $transition-duration ease-out;
+    font-weight: bold;
     &:hover, &.active {
         color: $primary;
     }
@@ -51,6 +53,10 @@ a {
     }
 }
 
+strong {
+    text-decoration: underline;
+}
+
 hr {
     width: 120px;
     border-top-color: whitesmoke;
@@ -61,22 +67,27 @@ hr {
 h1 {
     font-size: 36px;
     font-weight: 900;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
 }
 
 h2 {
-    font-size: 28px;
-    letter-spacing: 0;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 5px;
+    font-size: 24px;
+    margin-bottom: 2rem;
+    margin-top: 5rem;
+    font-weight: 600;
 }
 
 p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.opening {
+    font-size: 22px;
 }
 
 .container {
-    width: 500px;
+    width: 700px;
 }
 
 #site-wrapper {
@@ -88,21 +99,35 @@ p {
     //    padding-top: 70px;
         display: flex;
         align-items: center;
-    //    padding-bottom: 70px;
+        padding-bottom: 1rem;
     }
+}
 
-    > footer {
-    //    padding: 70px 0;
-        color: $gray-light;
-        font-size: 14px;
-        text-align: center;
-        p {
-            margin-bottom: 6px;
-            a[class*='ion-'] {
-                display: inline-block;
-                vertical-align: middle;
-                font-size: 20px;
-                margin: 0 2px;
+body {
+    position: relative;
+    background: whitesmoke;
+}
+
+#content-wrapper {
+    background: #fff;
+    padding: 70px 40px;
+}
+
+footer {
+    border-top: 1px solid #eee;
+    color: $gray-light;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    padding: 60px 0 30px 0;
+    p {
+        margin-bottom: 30px;
+        a[class*='fa'] {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 15px;
+            &:hover {
+                color: $accent;
             }
         }
     }
