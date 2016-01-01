@@ -708,7 +708,8 @@ form {
 body {
   font-size: 18px;
   color: #333;
-  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif; }
+  font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+  line-height: 1.7; }
 
 a {
   position: relative;
@@ -759,7 +760,14 @@ p {
   margin-bottom: 20px; }
 
 .opening {
-  font-size: 22px; }
+  font-size: 22px;
+  line-height: 1.8;
+  margin-bottom: 30px; }
+
+blockquote {
+  padding-left: 20px;
+  border-left: 8px solid whitesmoke;
+  margin: 0; }
 
 .container {
   width: 700px; }
