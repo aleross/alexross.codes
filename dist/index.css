@@ -638,6 +638,9 @@ form {
   #about #photos img:last-child, #about #photos img:nth-child(3) {
     margin-right: 0; }
 
+#about #skills p {
+  margin-bottom: 5px; }
+
 #site-header {
   display: flex;
   align-items: center;
