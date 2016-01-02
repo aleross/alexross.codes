@@ -638,8 +638,8 @@ form {
   #about #photos img:last-child, #about #photos img:nth-child(3) {
     margin-right: 0; }
 
-#about #skills p {
-  margin-bottom: 5px; }
+#about #skills p:not(:first-of-type) {
+  margin-bottom: 0; }
 
 #site-header {
   display: flex;

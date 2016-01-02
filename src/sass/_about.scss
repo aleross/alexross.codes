@@ -16,7 +16,7 @@
         }
     }
 
-    #skills p {
-        margin-bottom: 5px;
+    #skills p:not(:first-of-type) {
+        margin-bottom: 0;
     }
 }
