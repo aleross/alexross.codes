@@ -638,8 +638,13 @@ form {
   #about #photos img:last-child, #about #photos img:nth-child(3) {
     margin-right: 0; }
 
-#about #skills p:not(:first-of-type) {
-  margin-bottom: 0; }
+#about ul {
+  background: whitesmoke;
+  padding: 20px; }
+
+#about li {
+  margin-bottom: 0;
+  font-size: 15px; }
 
 #site-header {
   display: flex;
@@ -713,6 +718,9 @@ body {
   color: #333;
   font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
   line-height: 1.7; }
+
+ul {
+  list-style-type: disc; }
 
 a {
   position: relative;
