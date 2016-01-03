@@ -94,7 +94,11 @@ blockquote {
 }
 
 .container {
-    width: 700px;
+    width: 800px;
+}
+
+#page-content {
+    padding: 20px 80px 0;
 }
 
 #site-wrapper {
@@ -112,7 +116,7 @@ blockquote {
 
 body {
     position: relative;
-    background: whitesmoke;
+    background: $gray-bg;
 }
 
 #content-wrapper {
@@ -121,23 +125,26 @@ body {
 }
 
 footer {
-    border-top: 1px solid #eee;
-    color: $gray-light;
+    border-top: 1px solid $border-color;
+    color: $gray;
     font-size: 14px;
     text-align: center;
     width: 100%;
-    padding: 60px 0 30px 0;
+    padding: 30px 0 20px;
     p {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
         a[class*='fa'] {
+            color: $gray-light;
             display: inline-block;
             vertical-align: middle;
-            margin: 0 15px;
+            margin: 0 10px;
             &:hover {
-                color: $accent;
+                color: $primary;
             }
         }
     }
 }
 
-
+.shadow {
+    box-shadow: 0 0 0 1px rgba(39,44,48,0.05), 0 2px 7px 1px rgba(39,44,48,0.16);
+}

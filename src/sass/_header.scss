@@ -6,12 +6,12 @@
 
 #site-brand {
 
-    $diam: 50px; // circle diameter
+    $diam: 40px; // circle diameter
     $speed: 0.1s; // speed of hover effect
 
     position: absolute;
-    left: -200px;
-    top: 0;
+    left: -90px;
+    top: -5px;
     display: inline-block;
     width: $diam;
     height: $diam;
@@ -71,7 +71,7 @@
    //     font-family: 'Proxima Nova', sans-serif;
         display: inline-block;
         position: relative;
-        color: rgba(0, 0, 0, 0.3);
+        color: $gray-light;
         font-weight: bold;
         font-size: 20px;
         margin-right: 30px;
@@ -87,7 +87,7 @@
         }
 
         &:hover {
-            color: #333;
+            color: $gray-dark;
         }
     }
 }

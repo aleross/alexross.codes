@@ -1,5 +1,10 @@
 #books {
     .book {
+        display: block;
+        float: left;
 
+        img {
+            width: 200px;
+        }
     }
 }
