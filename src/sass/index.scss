@@ -71,6 +71,10 @@ h2 {
     margin-bottom: 2rem;
     margin-top: 5rem;
     font-weight: 600;
+
+    small {
+        color: $gray-light;
+    }
 }
 
 p {

@@ -629,10 +629,13 @@ form {
   margin-bottom: 2.5rem; }
 
 #about #photos img {
+  box-sizing: border-box;
   float: left;
   width: 32%;
   margin: 1%;
-  height: 200px; }
+  height: 200px;
+  border: 1px solid #ddd;
+  border-radius: 4px; }
   #about #photos img:first-child, #about #photos img:nth-child(4) {
     margin-left: 0; }
   #about #photos img:last-child, #about #photos img:nth-child(3) {
@@ -780,6 +783,8 @@ h2 {
   margin-bottom: 2rem;
   margin-top: 5rem;
   font-weight: 600; }
+  h2 small {
+    color: #798c9c; }
 
 p {
   margin-bottom: 20px; }
