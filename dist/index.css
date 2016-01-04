@@ -740,9 +740,8 @@ form {
     display: inline-block;
     position: relative;
     color: #96a5b2;
-    font-weight: bold;
-    font-size: 20px;
-    margin-right: 30px;
+    font-size: 18px;
+    margin-right: 25px;
     text-decoration: none;
     line-height: 1.4; }
     #site-nav a:last-child {
