@@ -641,14 +641,6 @@ form {
   #about #photos img:last-child, #about #photos img:nth-child(3) {
     margin-right: 0; }
 
-#about ul {
-  background: whitesmoke;
-  padding: 20px; }
-
-#about li {
-  margin-bottom: 0;
-  font-size: 15px; }
-
 #books .book {
   display: block;
   float: left;
@@ -761,14 +753,19 @@ body {
   line-height: 1.7; }
 
 ul {
-  list-style-type: disc; }
+  list-style-type: disc;
+  background: whitesmoke;
+  padding: 20px; }
+
+li {
+  margin-bottom: 0;
+  font-size: 15px; }
 
 a {
   position: relative;
   color: #4078C0;
   text-decoration: none;
-  transition: color 0.2s ease-out;
-  font-weight: bold; }
+  transition: color 0.2s ease-out; }
   a:hover, a.active {
     color: #4078C0; }
   a:not(.no-effect):after {
