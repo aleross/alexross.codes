@@ -662,7 +662,8 @@ form {
   #projects .project img {
     max-width: 100%;
     border-radius: 4px;
-    border: 1px solid #ebeef0; }
+    border: 1px solid #ebeef0;
+    margin-bottom: 10px; }
 
 #projects .details {
   font-size: 75%;
@@ -772,7 +773,7 @@ a {
     background-color: #4078C0;
     bottom: 0;
     content: '';
-    height: 2px;
+    height: 1px;
     left: 45%;
     position: absolute;
     transition-duration: 0.2s;
