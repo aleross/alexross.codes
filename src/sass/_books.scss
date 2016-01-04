@@ -2,9 +2,21 @@
     .book {
         display: block;
         float: left;
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
 
-        img {
-            width: 200px;
+        width: calc((100% / 3) - 10px);
+        height: 300px;
+        margin: 5px;
+
+        border-radius: 2px;
+        box-sizing: border-box;
+        border: 1px solid $border-color;
+
+        &:hover {
+            background-size: contain;
+            background-position: center;
         }
     }
 }

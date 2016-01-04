@@ -651,9 +651,19 @@ form {
 
 #books .book {
   display: block;
-  float: left; }
-  #books .book img {
-    width: 200px; }
+  float: left;
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: calc((100% / 3) - 10px);
+  height: 300px;
+  margin: 5px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  border: 1px solid #ebeef0; }
+  #books .book:hover {
+    background-size: contain;
+    background-position: center; }
 
 #projects .project {
   padding-bottom: 10px; }
