@@ -3,14 +3,9 @@
     .project {
         padding-bottom: 10px;
         img {
-            width: 80vw;
-            margin: 0 -250px 10px;
-        //    border-radius: 4px;
-        //    border: 1px solid #eee;
-
-            &.border {
-                border: 1px solid $border-color;
-            }
+            max-width: 100%;
+            border-radius: 4px;
+            border: 1px solid $border-color;
         }
     }
 

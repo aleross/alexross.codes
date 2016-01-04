@@ -1,17 +1,22 @@
 #about {
     #photos {
 
-        width: 90vw;
-        margin: 0 -300px;
 
         // 3x3 grid of photos
         img {
             box-sizing: border-box;
             float: left;
-            width: calc((100% / 5) - 10px);
-            margin: 5px;
-            border: 1px solid #ddd;
+            width: 32%;
+            margin: 1%;
+            height: 200px;
             border-radius: 4px;
+            border: 1px solid $border-color;
+            &:first-child, &:nth-child(4) {
+                margin-left: 0;
+            }
+            &:last-child, &:nth-child(3) {
+                margin-right: 0;
+            }
         }
     }
 

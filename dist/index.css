@@ -628,16 +628,18 @@ ol,
 form {
   margin-bottom: 2.5rem; }
 
-#about #photos {
-  width: 90vw;
-  margin: 0 -300px; }
-  #about #photos img {
-    box-sizing: border-box;
-    float: left;
-    width: calc((100% / 5) - 10px);
-    margin: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px; }
+#about #photos img {
+  box-sizing: border-box;
+  float: left;
+  width: 32%;
+  margin: 1%;
+  height: 200px;
+  border-radius: 4px;
+  border: 1px solid #ebeef0; }
+  #about #photos img:first-child, #about #photos img:nth-child(4) {
+    margin-left: 0; }
+  #about #photos img:last-child, #about #photos img:nth-child(3) {
+    margin-right: 0; }
 
 #about ul {
   background: whitesmoke;
@@ -656,10 +658,9 @@ form {
 #projects .project {
   padding-bottom: 10px; }
   #projects .project img {
-    width: 80vw;
-    margin: 0 -250px 10px; }
-    #projects .project img.border {
-      border: 1px solid #ebeef0; }
+    max-width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ebeef0; }
 
 #projects .details {
   font-size: 75%;
