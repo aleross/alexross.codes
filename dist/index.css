@@ -641,6 +641,9 @@ form {
   #about #photos img:last-child, #about #photos img:nth-child(3) {
     margin-right: 0; }
 
+#books .books:first-of-type h2 {
+  margin-top: 30px; }
+
 #books .book {
   display: block;
   float: left;
