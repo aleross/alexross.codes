@@ -674,13 +674,18 @@ form {
 
 #projects .project {
   padding-bottom: 10px; }
-  #projects .project img {
+  #projects .project .project-media {
     max-width: 100%;
     border-radius: 4px;
     border: 1px solid #ebeef0;
     margin-bottom: 10px; }
   #projects .project:first-of-type h2 {
     margin-top: 30px; }
+
+#projects .meta {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 10px; }
 
 #projects .details {
   font-size: 75%;
