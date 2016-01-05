@@ -641,6 +641,18 @@ form {
   #about #photos img:last-child, #about #photos img:nth-child(3) {
     margin-right: 0; }
 
+#about blockquote {
+  padding: 20px;
+  background: #f7f8f9;
+  font-size: 15px; }
+  #about blockquote .author {
+    font-weight: bold;
+    display: block;
+    padding-top: 10px; }
+    #about blockquote .author .author-role {
+      color: #798c9c;
+      font-weight: normal; }
+
 #books .books:first-of-type h2 {
   margin-top: 30px; }
 
@@ -759,7 +771,7 @@ body {
 
 ul {
   list-style-type: disc;
-  background: whitesmoke;
+  background: #f7f8f9;
   padding: 20px; }
 
 li {

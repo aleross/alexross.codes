@@ -18,4 +18,21 @@
             }
         }
     }
+
+    blockquote {
+        padding: 20px;
+        background: $gray-bg;
+        font-size: 15px;
+
+        .author {
+            font-weight: bold;
+            display: block;
+            padding-top: 10px;
+
+            .author-role {
+                color: $gray;
+                font-weight: normal;
+            }
+        }
+    }
 }
