@@ -1,7 +1,7 @@
 {
-  "name": "coding-everest",
+  "name": "alexross-codes",
   "private": true,
-  "version": "1.1.7",
+  "version": "1.1.8",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-watch": "^0.6.1",
